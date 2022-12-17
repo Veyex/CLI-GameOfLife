@@ -104,11 +104,11 @@
                 {
                     if (cellArray[targetY, targetX] == 1)
                     {
-                        Console.Write("#");
+                        Console.Write("\u2588");
                     }
                     else
                     {
-                        Console.Write("~");
+                        Console.Write("\u00A0");
                     }
                     Console.Write("|");
                 }
