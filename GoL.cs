@@ -9,7 +9,6 @@
 
         public GoL()
         {
-
             cellArray = new int[rowNum, columnNum];
             neighbourArray = new int[rowNum, columnNum];
         }
