@@ -32,13 +32,6 @@
 
         public void Test()
         {
-            cellArray[4 ,5] = 1;
-            cellArray[3, 5] = 1;
-            cellArray[5, 5] = 1;
-        }
-
-        public void TestTwo()
-        {
             cellArray[1, 0] = 1;
             cellArray[2, 1] = 1;
             cellArray[1, 2] = 1;

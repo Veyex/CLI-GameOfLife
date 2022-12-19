@@ -8,7 +8,7 @@ namespace CLI_GameOfLife
         {
             GoL goL = new GoL();
             goL.Init();
-            goL.TestTwo();
+            goL.Test();
             while (true)
             {
                 goL.DrawCellArray();
