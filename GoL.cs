@@ -28,10 +28,7 @@
                     cellArray[targetX, targetY] = 0;
                 }
             }
-        }
 
-        public void Test()
-        {
             cellArray[1, 0] = 1;
             cellArray[2, 1] = 1;
             cellArray[1, 2] = 1;
