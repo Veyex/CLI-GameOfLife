@@ -2,17 +2,22 @@
 {
     class GoL
     {
+        #region Properties & Fields
         public int rowNum;
         public int columnNum;
         public int[,] cellArray;
         public int[,] neighbourArray;
+        #endregion
 
+        #region Constructors
         public GoL()
         {
             cellArray = new int[rowNum, columnNum];
             neighbourArray = new int[rowNum, columnNum];
         }
+        #endregion
 
+        #region Methods
         public void Init()
         {
             Console.WriteLine("Enter No. of Rows:");
@@ -119,5 +124,6 @@
             }
             Console.WriteLine();
         }
+        #endregion
     }
 }
