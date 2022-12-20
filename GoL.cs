@@ -10,6 +10,7 @@
         #endregion
 
         #region Constructors
+        //Defines the amount of rows and columns on the board
         public GoL()
         {
             cellArray = new int[rowNum, columnNum];
@@ -18,6 +19,8 @@
         #endregion
 
         #region Methods
+        //Allows the user to enter the amount of rows and columns on the board
+        //Then generates values accordingly
         public void Init()
         {
             Console.WriteLine("Enter No. of Rows:");
@@ -41,6 +44,9 @@
             cellArray[0, 2] = 1;
         }
 
+        //Iterates thru each cell on the board then thru all surrounding cells
+        //Adding up the amount of live cells in the surrounding cells and
+        //assigns the value to a total for each cell stored in a separate array
         public void CalculateNeighbours()
         {
             int total;
@@ -71,6 +77,7 @@
             }
         }
 
+        //Uses Conway's rule set and the total to set the value to each cell
         public void CellStateUpdate()
         {
             for (int targetY = 0; targetY < rowNum; targetY++)
@@ -89,6 +96,7 @@
             }
         }
 
+        //Uses the cell values to print the correct symbol to the CLI
         public void DrawCellArray()
         {
             Console.Clear();
@@ -111,6 +119,8 @@
             Console.WriteLine();
         }
 
+        /*
+        //Currently unused method for debugging
         public void DrawNeighbourArray()
         {
             for (int targetY = 0; targetY < rowNum; targetY++)
@@ -124,6 +134,7 @@
             }
             Console.WriteLine();
         }
+        */
         #endregion
     }
 }
