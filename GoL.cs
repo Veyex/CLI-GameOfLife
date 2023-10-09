@@ -3,8 +3,8 @@
     class GoL
     {
         #region Properties & Fields
-        public int rowNum;
-        public int columnNum;
+        public const int rowNum;
+        public const int columnNum;
         public int[,] cellArray;
         public int[,] neighbourArray;
         #endregion
@@ -45,7 +45,7 @@
         }
 
         //Iterates thru each cell on the board then thru all surrounding cells
-        //Adding up the amount of live cells in the surrounding cells and
+        //Adds up the amount of live cells in the surrounding cells and
         //assigns the value to a total for each cell stored in a separate array
         public void CalculateNeighbours()
         {
@@ -120,7 +120,7 @@
         }
 
         /*
-        //Currently unused method for debugging
+        //Unused method for debugging
         public void DrawNeighbourArray()
         {
             for (int targetY = 0; targetY < rowNum; targetY++)
